@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @charset "UTF-8";
+
+        html, body {
+            padding: 0;
+            margin: 0;
+
+            width: 100vw;
+            height: 100vh;
+
+            background-color: #6DB4F2;
+            background-size: contain;
+            background-repeat: no-repeat;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        h1 {
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+            margin: auto;
+            width: fit-content;
+            padding: 30px 0px;
+        }
+
+        p {
+            width: 300px;
+            background-color: rgba(255, 255, 255, 0.2);
+            text-align: center;
+            padding: 30px 0px;
+            margin: auto;
+        }
+
+        @media screen and (orientation: portrait) {
+            html, body {
+                background-image: url(../imagens/cev-portrait.jpg);
+                background-position: center bottom;
+            }
+        }
+
+        @media screen and (orientation: landscape) {
+            html, body {
+                background-image: url(../imagens/cev-landscape.jpg);
+                background-position: left bottom;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Vire seu dispositivo</h1>
+    <p>Por favor, gire seu dispositivo para explorar as funções</p>
+</body>
+</html>
