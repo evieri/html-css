@@ -52,4 +52,8 @@
     .open {
         display: block;
     }
+
+    main {
+        width: auto;
+    }
 }
