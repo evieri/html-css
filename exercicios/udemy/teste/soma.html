@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de funções</title>
+</head>
+<body>
+
+    <script>
+        var total
+
+        var n1 = Number(prompt("Diz um número aí boy: "))
+        var n2 = Number(prompt("Agora diz outro dirocha memo: "))
+        var ope = prompt("Por último, diga aí se tu quer somar ('soma') ou subtrair ('subtração') esses número aí: ")
+
+        function soma(n1, n2) {
+
+            var total = n1 + n2
+
+            return total
+
+        }
+
+        function subtracao(n1, n2) {
+
+            var total = n1 - n2
+
+            return total
+
+        }
+
+        if (ope === 'soma') {
+
+            total = soma(n1, n2)
+
+        } else if (ope === 'subtração') {
+
+            total = subtracao(n1, n2)
+
+        } else {
+
+            document.write("<h1>ESCREVE DIREITO PORRA</h1>")
+
+        }
+
+        document.write("<h1> Teu resultado é " + total + "</h1>")
+
+
+    </script>
+</body>
+</html>
