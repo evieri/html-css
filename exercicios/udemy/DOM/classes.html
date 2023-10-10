@@ -4,8 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        function foco() {
+            document.getElementById('texto').style.backgroundColor = 'yellow';
+        }
+        function semFoco() {
+            if (document.getElementById('texto').value.length < 3) {
+
+                document.getElementById('texto').style.backgroundColor = 'red';
+
+            } else {
+
+                document.getElementById('texto').style.backgroundColor = 'green';
+                
+            }
+        }
+    </script>
 </head>
 <body>
+
+    <h3>Desafio de DOM</h3>
+
+    <hr>
+
+    <input
+    type="text"
+    id="texto"
+    onfocus="foco()"
+    onblur="semFoco()">
+
     
 </body>
 </html>
