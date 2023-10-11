@@ -16,14 +16,14 @@ body {
 #corpo {
     height: 80%;
     width: 50%;
-    max-width: 500px;
+    max-width: 400px;
     max-height: 700px;
 
     border-radius: 55px;
     
     background-color: #292929;
 
-    box-shadow: 5px 10px 20px 0px rgba(11,11,11,0.5);
+    box-shadow: 5px 10px 20px 0px rgba(11,11,11,0.5), inset 0px 3px 1px 0px rgba(255, 255, 255, 0.1);
 }
 
 #display {
@@ -35,6 +35,9 @@ body {
     align-items: end;
 
     border-radius: 50px 50px 10px 10px;
+    border: 3px solid black;
+
+    box-shadow: inset 0px 2px 0px 0px rgba(255, 255, 255, 0.25), 0px 3px 1px 0px rgba(255, 255, 255, 0.1) ;
 
     background-color: #0B0B0B;
 }
@@ -65,7 +68,7 @@ button {
     font-size: xx-large;
     background: linear-gradient(119deg, rgb(55, 55, 55) 5%, rgba(41,41,41,1) 35%);
     border: none;
-    box-shadow: 10px 10px 30px 0px rgba(11,11,11,0.5);
+    box-shadow: 10px 10px 30px 0px rgba(11,11,11,0.5), inset 10px 10px 30px 0px rgba(55, 55, 55, 0.5);
     border-radius: 50%;
 } 
 
@@ -100,6 +103,6 @@ button:active {
     border: none;
 }
 
-#numeros: {
-    border: none;
+input:focus {
+    outline: none;
 }
